@@ -2,8 +2,8 @@ const puppeteer = require("puppeteer");
 const axios = require("axios");
 const fs = require("fs-extra");
 
-const username = process.argv[2] || "belicot_enzo_driver";
-const folder = "./images";
+const username = process.argv[2] || "lacavedumarche_hossegor";
+const folder = "./imagesCaveDuMarche";
 
 async function autoScroll(page) {
   await page.evaluate(async () => {

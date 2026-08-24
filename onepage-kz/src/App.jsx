@@ -1,14 +1,14 @@
 import React, { useRef, useState, useEffect } from "react";
-
-import enzoImg from "./assets/enzo.jpg"
+import enzoSimulator from "./assets/media/enzoSimulator.mp4";
+import enzoSimulatorThumb from "./assets/media/enzoSimulatorThumb.jpg";
+import enzoImg from "./assets/enzo.jpg";
 import enzoTiktok from "./assets/media/enzoTiktok.png";
 import enzoFacebook from "./assets/media/enzoFacebook.png";
 import enzoF4 from "./assets/Actu/enzoF4.jpg";
 import enzoCalendar from "./assets/Actu/enzoCalendar.png";
 import enzoKZ from "./assets/Actu/enzoKZ.png";
-import enzoCircuit from "./assets/Actu/enzoCircuit.png";
 import enzoBackground from "./assets/enzoBackground.png";
-import enzoCDSport from "./assets/Actu/enzoCDSport.jpg"
+import enzoCDSport from "./assets/Actu/enzoCDSport.jpg";
 
 
 
@@ -24,63 +24,53 @@ import enzoCDSport from "./assets/Actu/enzoCDSport.jpg"
  * - Si tu n'utilises pas Tailwind, je te fais une version CSS classique
  */
 export default function OnePageSponsorKZ() {
-  const images = [
-  "/images/image_5.jpg",
-  "/images/image_7.jpg",
-  "/images/image_8.jpg",
-  "/images/image_9.jpg",
-  "/images/image_10.jpg",
-  "/images/image_11.jpg",
-  "/images/image_12.jpg",
-];
   const data = {
-    pilotName: "Enzo Belicot",
+    pilotName: "Enzo Bélicot",
     age: 16,
-    region: "Nouvelle-Aquitaine",
-    category: "KZ (Shifter 125cc)",
-    seasonTitle: "Enzo Bélicot ",
-    headline: "From karting to Formula 4.New season, new challenges, same mindset 💪,KZ2 battles, full commitment, no limits. Follow my journey and support the grind",
+    region: "Pays Basque • Nouvelle-Aquitaine",
+    category: "Formule 4 • Objectif Porsche GT Cup",
+    seasonTitle: "Enzo Bélicot",
+    headline: "Près de 500 candidats, 8 pilotes en piste, un seul vainqueur. Formé à la FFSA Academy puis en Formule 4 (1:21.4 à Lédenon), Enzo vise l’une des huit places — et trace sa route vers les 24 Heures du Mans.",
     // Mets ici un lien vers une belle photo (ou laisse vide et ça met un placeholder)
     heroImageUrl: enzoBackground,
 news: [
-{
-  date: "Mars 2026",
-  title: "Test Formule 4",
-  desc: "Premiers roulages en monoplace avec CD Sport sur le circuit de Lédenon.",
-  img: enzoCDSport,
-  tag: "F4",
-},
   {
-    date: "Fév 2026",
-    title: "First run en KZ",
-    desc: "Découverte du shifter, premières sensations et réglages.",
-    img: enzoKZ, // 👈 ta photo locale
-    link: "https://www.instagram.com/p/DUgf_sZjQ34/",
-    tag: "Instagram",
+    date: "Août 2026",
+    title: "Préparation sur simulateur",
+    desc: "Sessions d’entraînement au centre PSR pour travailler régularité, repères et préparation mentale avant les prochaines échéances.",
+    video: enzoSimulator,
+    poster: enzoSimulatorThumb,
+    tag: "Sim Racing",
+  },
+  {
+    date: "2026",
+    title: "1:21.4 à Lédenon",
+    desc: "Chrono de référence en Formule 4 avec l’école CD Sport sur le circuit de Lédenon.",
+    img: enzoCDSport,
+    tag: "F4 • CD Sport",
+  },
+  {
+    date: "2026",
+    title: "Cap sur les sélections Porsche",
+    desc: "Dossier de candidature prévu le 5 octobre, avant les sélections du 31 octobre au 2 novembre 2026.",
+    img: enzoCalendar,
+    link: "#porsche",
+    tag: "Objectif 2026",
   },
   {
     date: "Fév 2026",
-    title: "Session d'entraînement",
-    desc: "Travail des trajectoires et régularité.",
-    img: enzoCircuit,
-    link: "https://www.instagram.com/belicot_enzo_driver/",
-    tag: "Training",
-  },
-    {
-    date: "Fév 2026",
-    title: "First Run en F4",
-    desc: "Deuxième fois en F4 sur le circuit de Nogaro avec @cd.sport",
+    title: "Roulage Formule 4 à Nogaro",
+    desc: "Nouvelle séance de travail en monoplace avec CD Sport : freinage, trajectoires et exploitation de la voiture.",
     img: enzoF4,
     link: "https://www.instagram.com/belicot_enzo_driver/",
     tag: "Training",
   },
   {
-    date: "Mars 2026",
-    title: "Prochaine course",
-    desc: "Objectif : progression et top 10.",
-    img: enzoCalendar,
-    link: "#packs",
-    tag: "Objectif",
+    date: "2024",
+    title: "3e du Trophée Atlantique",
+    desc: "Une saison FFSA Academy conclue par une 3e place au Trophée Atlantique.",
+    img: enzoKZ,
+    tag: "Palmarès",
   },
 ],
 gallery: [
@@ -95,13 +85,13 @@ gallery: [
     link: "https://www.tiktok.com/@eyeofvalentin/video/7440973658052463904?_r=1&_t=ZN-93x0LsyzjGg",
   },
 
-    { src: "/images/image_5.jpg" },
-    { src: "/images/image_7.jpg" },
-    { src: "/images/image_8.jpg" },
-    { src: "/images/image_9.jpg" },
-    { src: "/images/image_10.jpg" },
-    { src: "/images/image_11.jpg" },
-    { src: "/images/image_12.jpg" },
+    { type: "image", src: "/images/image_5.jpg" },
+    { type: "image", src: "/images/image_7.jpg" },
+    { type: "image", src: "/images/image_8.jpg" },
+    { type: "image", src: "/images/image_9.jpg" },
+    { type: "image", src: "/images/image_10.jpg" },
+    { type: "image", src: "/images/image_11.jpg" },
+    { type: "image", src: "/images/image_12.jpg" },
   //https://www.facebook.com/reel/3651126745042247
 /* {
     type: "video",
@@ -118,61 +108,108 @@ gallery: [
 
 
     highlights: [
-      { k: "Catégorie", v: "KZ (kart le plus rapide, boîte 6 rapports)" },
-      { k: "Programme", v: "8 à 10 courses (régional + quelques nationales)" },
-      { k: "Objectifs", v: "Progression KZ • Top 10 réguliers • Podiums régionaux" },
-      { k: "Local", v: "Pilote + projet ancrés en Nouvelle-Aquitaine" },
+      { k: "Championnat de France Junior 2024", v: "15e après seulement 18 mois de pratique" },
+      { k: "Kart-Mag • 72 pilotes", v: "+21 places en finale après être reparti dernier" },
+      { k: "Performance", v: "Record du tour lors du meeting Kart-Mag" },
+      { k: "Formule 4 • Lédenon", v: "1:21.4 avec l’école CD Sport" },
     ],
 
     results: [
-      "Coupe de France Karting 2025 – Val d’Argenton",
-      "Coupe de France Karting 2024 – Angerville",
-      "Championnat de France 2024 – Muret",
-      // Ajoute d’autres lignes si besoin
+      "2022 — Débuts à Briscous : podiums dès la première saison UFOLEP (2e et 3e)",
+      "2023 — FFSA Nouvelle-Aquitaine et sélection nationale FFSA Academy au Mans",
+      "2024 — 15e du Championnat de France Junior FFSA Academy",
+      "2024 — 3e du Trophée Atlantique",
+      "2024 — 3e place collective en Coupe de France avec la Nouvelle-Aquitaine",
+      "Kart-Mag — +21 places en finale et record du tour parmi 72 pilotes",
+      "2025–2026 — Formation Formule 4 CD Sport, roulages en France et en Espagne",
+      "2026 — Chrono de référence : 1:21.4 à Lédenon",
+    ],
+
+    timeline: [
+      {
+        year: "2022",
+        title: "Débuts karting — Briscous",
+        text: "Découverte à 12 ans. Podiums dès la première saison UFOLEP avec une 2e et une 3e place.",
+      },
+      {
+        year: "2023",
+        title: "FFSA Nouvelle-Aquitaine + détection nationale",
+        text: "Sélectionné par la FFSA Academy au Mans après une progression rapide face à des pilotes plus expérimentés.",
+      },
+      {
+        year: "2024",
+        title: "Championnat de France Junior FFSA Academy",
+        text: "15e du championnat après 18 mois de pratique, 3e du Trophée Atlantique et 3e place collective en Coupe de France avec la Nouvelle-Aquitaine.",
+      },
+      {
+        year: "2025–26",
+        title: "Passage à la monoplace — Formule 4",
+        text: "Entraînements avec CD Sport à Lédenon, Nogaro et sur d’autres circuits de France et d’Espagne. Référence : 1:21.4 à Lédenon.",
+      },
+      {
+        year: "2026",
+        title: "Objectif — Sélections Porsche GT Cup",
+        text: "Dossier prévu le 5 octobre. Sélections du 31 octobre au 2 novembre 2026.",
+      },
     ],
 
     sponsorBenefits: [
-      "Logo sur le kart (carénage avant, flancs, arrière) selon le pack",
-      "Logo sur la combinaison / supports (selon le pack)",
-      "Mentions & contenus sur réseaux sociaux (photos/vidéos week-ends de course)",
-      "Association à un projet jeune talent + valeurs performance / rigueur",
-      "Possibilité d’invitations en course (selon accord)",
+      "Visibilité sur la combinaison, le casque et les supports officiels selon le partenariat",
+      "Photos et vidéos dédiées pendant les roulages, les sélections et les week-ends de course",
+      "Journées circuit, hospitalité paddock et rencontres avec les équipes ou clients",
+      "Interventions d’Enzo en entreprise et contenus dédiés à la marque",
+      "Exclusivité sectorielle et naming possibles pour les partenaires majeurs",
     ],
 
-    packs: [
+    partnerships: [
       {
-        name: "Bronze",
-        price: "500 €",
-        perks: ["Logo petit format sur kart", "Mention réseaux sociaux"],
+        name: "Sélections Porsche",
+        price: "10–15 k€",
+        kicker: "Échéance immédiate",
+        perks: [
+          "Équipement pilote FIA et préparation spécifique",
+          "Roulages F4, coaching et simulateur",
+          "Logistique des sélections du 31 oct. au 2 nov.",
+          "Priorité sur le partenariat de la saison 2027",
+        ],
       },
       {
-        name: "Argent",
-        price: "1 000 €",
-        perks: ["Logo moyen sur kart", "Logo combinaison (selon place)", "Réseaux sociaux"],
+        name: "Scénario GT 2027",
+        price: "370 k€ min.",
+        kicker: "Budget saison complète",
+        perks: [
+          "Si Enzo remporte les sélections ou est repéré par une écurie",
+          "Saison d’avril à octobre 2027",
+          "Exposition paddock et média renforcée",
+          "Budget partenaires ajustable si une écurie prend en charge une partie de la saison",
+        ],
       },
       {
-        name: "Or",
-        price: "2 000 €+",
-        perks: ["Logo principal (premium)", "Visibilité maximale paddock", "Contenus réguliers"],
+        name: "Scénario F4 2027",
+        price: "250 k€ min.",
+        kicker: "Budget saison complète",
+        perks: [
+          "Saison monoplace complète si le scénario GT ne se concrétise pas",
+          "Capitaliser sur la formation CD Sport et les chronos 2026",
+          "Poursuivre la trajectoire vers le GT et l’endurance",
+          "Nouvelle candidature GT possible ensuite",
+        ],
       },
     ],
 
-    // Budget (optionnel)
     budget: {
-      total: "12 000 – 15 000 €",
-      note:
-        "Objectif : financer une partie de la saison via des partenaires locaux et régionaux.",
+      total: "10 000 – 15 000 €",
+      note: "Enveloppe recherchée pour préparer et équiper Enzo pour les sélections Porsche GT Cup 2026.",
     },
 
     contact: {
-      contactName: "[Bélicot Bernard/ Manager]",
+      contactName: "Bernard Bélicot • Sixty-Four Racing",
       phone: "+33771722777",
       email: "b.belicot@gmail.com",
       instagram: "https://www.instagram.com/belicot_enzo_driver/",
     },
 
-    // QR code optionnel (mets une URL et je te ferai une version avec QR si tu veux)
-    websiteOrLink: "[Lien dossier / Insta / site]",
+    websiteOrLink: "https://www.enzobelicot.fr/",
   };
 
   return (
@@ -199,7 +236,7 @@ gallery: [
           {data.heroImageUrl ? (
             <img
               src={data.heroImageUrl}
-              alt="Karting KZ"
+              alt="Enzo Bélicot en piste"
               className="h-full w-full object-cover opacity-35"
             />
           ) : (
@@ -210,21 +247,38 @@ gallery: [
 <div className="relative mx-auto max-w-[1800px] px-6 py-14">
           <div className="grid gap-10 lg:grid-cols-12">
             <div className="lg:col-span-7">
-              <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
-                <span className="h-2 w-2 rounded-full bg-red-500" />
-                Partenariat sportif • Visibilité locale & régionale
-              </div>
+            
 
-              <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl">
-                {data.seasonTitle}
-              </h1>
+        <div className="mt-5 inline-block">
+  <h1
+    className="uppercase text-[#f2efea]"
+    style={{
+      fontFamily: '"Anton", sans-serif',
+      fontWeight: 400,
+      fontSize: "clamp(56px, 9vw, 104px)",
+      lineHeight: 0.95,
+      letterSpacing: "0.01em",
+    }}
+  >
+    <span className="block">ENZO</span>
+    <span className="block">BÉLICOT</span>
+  </h1>
+
+  <div
+    className="mt-2 h-3 w-full"
+    style={{
+      background:
+        "repeating-linear-gradient(90deg,#ef0900 0 42px,#f2efea 42px 84px)",
+    }}
+  />
+</div>
 
               <p className="mt-4 text-lg text-white/80">{data.headline}</p>
               <p
   className="mt-6 text-5xl font-extrabold text-red-500"
   style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.08em" }}
 >
-   🚀THE WORK STARTS NOW.
+   OBJECTIF PORSCHE GT CUP.
 </p>
 
               
@@ -237,25 +291,12 @@ gallery: [
                   Devenir partenaire
                 </a>
                 <a
-                  href="#packs"
+                  href="#porsche"
                   className="rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-semibold text-white/90 hover:bg-white/10"
                 >
-                  Voir les packs
+                  Voir le projet 2026–2027
                 </a>
               </div>
-                          <div className="mt-6">
-                <Card title="Résultats & expérience">
-              <ul className="space-y-2 text-sm text-white/80">
-                {data.results.map((r, i) => (
-                  <li key={i} className="flex gap-2">
-                    <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-red-500" />
-                    <span>{r}</span>
-                  </li>
-                ))}
-              </ul>
-
-            </Card>
-            </div>
             </div>
             
 
@@ -270,13 +311,13 @@ gallery: [
       <div className="w-32 h-40 rounded-lg border border-white/20 bg-black/20 overflow-hidden">
         <img
           src={enzoImg}
-          alt="Enzo Belicot"
+          alt="Enzo Bélicot"
           className="w-full h-full object-cover"
         />
       </div>
 
       <div className="absolute -bottom-2 bg-red-600 text-white text-[10px] px-2 py-0.5 rounded-full shadow">
-        KZ Driver
+        F4 Driver
       </div>
     </div>
 
@@ -287,10 +328,10 @@ gallery: [
 
     {/* INFOS */}
     <div className="mt-1 space-y-1.5 text-xs">
-      <CompactRow label="Nom" value="Enzo Belicot" />
+      <CompactRow label="Nom" value="Enzo Bélicot" />
       <CompactRow label="Âge" value="16 ans" />
-      <CompactRow label="Région" value="Nouvelle-Aquitaine" />
-      <CompactRow label="Catégorie" value="KZ" />
+      <CompactRow label="Région" value="Pays Basque" />
+      <CompactRow label="Catégorie" value="Formule 4" />
     </div>
 
   </div>
@@ -300,201 +341,231 @@ gallery: [
 
 
 
+            {/* BANDEAU CHIFFRES CLÉS */}
+            <div className="lg:col-span-12 mt-2 grid overflow-hidden border border-white/10 bg-[#151517] sm:grid-cols-2 lg:grid-cols-4">
+              <div className="bg-red-600 px-6 py-7 md:px-8 md:py-9">
+                <div className="text-5xl md:text-6xl font-extrabold leading-none text-[#f2efea]" style={{ fontFamily: '"Bebas Neue", sans-serif' }}>
+                  8/500
+                </div>
+                <div className="mt-4 text-base md:text-lg font-bold uppercase leading-snug text-white" style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.055em" }}>
+                  Huit pilotes retenus sur ~500 candidats — sélections Porsche GT Cup 2026
+                </div>
+              </div>
+
+              <div className="border-t border-white/10 px-6 py-7 sm:border-l sm:border-t-0 md:px-8 md:py-9">
+                <div className="text-5xl md:text-6xl font-extrabold leading-none text-[#f2efea]" style={{ fontFamily: '"Bebas Neue", sans-serif' }}>
+                  15<sup className="text-2xl md:text-3xl">e</sup>
+                </div>
+                <div className="mt-4 text-base md:text-lg font-bold uppercase leading-snug text-white/80" style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.055em" }}>
+                  Championnat de France Junior Karting 2024 — après 18 mois de pratique
+                </div>
+              </div>
+
+              <div className="border-t border-white/10 px-6 py-7 sm:border-l lg:border-t-0 md:px-8 md:py-9">
+                <div className="text-5xl md:text-6xl font-extrabold leading-none text-[#f2efea]" style={{ fontFamily: '"Bebas Neue", sans-serif' }}>
+                  +21
+                </div>
+                <div className="mt-4 text-base md:text-lg font-bold uppercase leading-snug text-white/80" style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.055em" }}>
+                  Places regagnées en finale, record du tour — meeting Kart-Mag, 72 pilotes
+                </div>
+              </div>
+
+              <div className="border-t border-white/10 px-6 py-7 sm:border-l lg:border-t-0 md:px-8 md:py-9">
+                <div className="text-5xl md:text-6xl font-extrabold leading-none text-[#f2efea]" style={{ fontFamily: '"Bebas Neue", sans-serif' }}>
+                  1:21.4
+                </div>
+                <div className="mt-4 text-base md:text-lg font-bold uppercase leading-snug text-white/80" style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.055em" }}>
+                  Chrono en Formule 4 — circuit de Lédenon, école CD Sport
+                </div>
+              </div>
+            </div>
+
           </div>
+
+          {/* SECTEUR 1 — L'HISTOIRE */}
+          <section className="mt-12 md:mt-16 overflow-hidden rounded-[28px] bg-[#0b0b0c] text-white">
+            <div className="px-5 py-8 md:px-10 md:py-12">
+              <div className="flex items-center gap-4">
+                <div
+                  className="text-[11px] md:text-xs font-extrabold uppercase text-red-600"
+                  style={{ letterSpacing: "0.28em" }}
+                >
+                  Secteur 1 — L'histoire
+                </div>
+                <div className="h-px w-16 bg-red-600" />
+              </div>
+
+              <h2
+                className="mt-4 max-w-3xl text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase leading-[0.92]"
+                style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.015em" }}
+              >
+                Forgé ailleurs.<br />
+                Révélé en piste.
+              </h2>
+
+              <p className="mt-5 max-w-3xl text-base md:text-lg leading-relaxed text-white/70">
+                Enzo n'a pas grandi dans les paddocks. Sa vitesse s'est construite sur d'autres
+                terrains — et c'est ce qui rend son profil unique.
+              </p>
+
+              <div className="mt-10 grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
+                <div className="space-y-3">
+                  {[
+                    {
+                      title: "La discipline du danseur",
+                      text: "Dix ans au conservatoire et à l'école du Malandain Ballet Biarritz : écoute, concentration, mémorisation — et une résistance à la critique précieuse face aux ingénieurs.",
+                    },
+                    {
+                      title: "Le sang-froid du sauveteur",
+                      text: "Sauveteur côtier formé à Biarritz dès 8 ans — à 10 ans, il sauve un homme de la noyade. Ce calme-là ne s'apprend pas en salle de briefing.",
+                    },
+                    {
+                      title: "Un athlète complet",
+                      text: "Skieur médaillé d'or à 12 ans, surfeur, judoka, coureur de fond. Brevet d'Initiation Aéronautique 2026 : la trajectoire, sur terre comme dans les airs.",
+                    },
+                    {
+                      title: "Le pilote-ingénieur",
+                      text: "En première, il prépare un Bac cyber sécurité avec option aéronautique et vise une école d'ingénieur automobile. Anglais courant. Un profil qui comprend la voiture autant qu'il la pilote.",
+                    },
+                  ].map((item) => (
+                    <div
+                      key={item.title}
+                      className="border-l-4 border-red-600 bg-[#151517] px-5 py-5 md:px-6"
+                    >
+                      <h3
+                        className="text-xl md:text-2xl font-extrabold uppercase leading-tight"
+                        style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.035em" }}
+                      >
+                        {item.title}
+                      </h3>
+                      <p className="mt-2 text-sm md:text-base leading-relaxed text-white/70">
+                        {item.text}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                <figure className="lg:pl-3">
+                  <div className="overflow-hidden border border-white/10 bg-black">
+                    <img
+                      src="/images/enzo_palmares.jpeg"
+                      alt="Enzo Bélicot au stand avec son kart FFSA Academy"
+                      className="h-auto w-full object-cover"
+                      loading="lazy"
+                    />
+                  </div>
+                  <figcaption
+                    className="mt-3 text-[11px] md:text-xs font-bold uppercase text-white/50"
+                    style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.12em" }}
+                  >
+                    Au stand — Championnat de France Junior, FFSA Academy
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+
+            <div
+              className="h-3"
+              style={{
+                background:
+                  "repeating-linear-gradient(90deg,#ef0900 0 42px,#f2efea 42px 84px)",
+              }}
+            />
+          </section>
+
+          {/* PALMARÈS / RÉSULTATS & EXPÉRIENCE */}
+          <PalmaresTimeline />
 
           {/* Highlights */}
      {/* Highlights */}
-      <HorizontalRail title="Mon actu">
-  {data.news.map((n, idx) => (
-    <div
-      key={idx}
-      className="snap-start shrink-0 w-[300px] md:w-[360px] rounded-2xl border border-white/10 bg-neutral-900/60 overflow-hidden hover:border-white/20 transition"
+
+
+<section id="porsche" className="mt-12 md:mt-16 bg-[#0b0b0c] text-white">
+  <div className="px-5 py-8 md:px-10 md:py-12">
+    <div className="flex items-center gap-4">
+      <div
+        className="text-[11px] md:text-xs font-extrabold uppercase text-red-600"
+        style={{ letterSpacing: "0.28em" }}
+      >
+        Secteur 3 — Le projet
+      </div>
+      <div className="h-px w-16 bg-red-600" />
+    </div>
+
+    <h2
+      className="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase leading-[0.9]"
+      style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.01em" }}
     >
-      {/* IMAGE */}
-      <div className="h-40 w-full overflow-hidden">
-        <img
-          src={n.img}
-          alt={n.title}
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      {/* CONTENT */}
-      <div className="p-4">
-        <div className="flex items-center justify-between text-xs text-white/60">
-          <span>{n.date}</span>
-          <span className="px-2 py-1 rounded-full bg-white/10">
-            {n.tag}
-          </span>
-        </div>
-
-        <div className="mt-2 text-base font-semibold">
-          {n.title}
-        </div>
-
-        <div className="mt-2 text-sm text-white/75">
-          {n.desc}
-        </div>
-
-        {n.link && (
-          <a
-            href={n.link}
-            target="_blank"
-            rel="noreferrer"
-            className="mt-4 inline-block text-sm font-semibold text-red-400 hover:text-red-300"
-          >
-            Voir →
-          </a>
-        )}
-      </div>
-    </div>
-  ))}
-</HorizontalRail>
-
-<section className="mx-auto  px-4 md:px-6 py-10 md:py-14">
-  <div className="mb-6">
-    <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80">
-      <span className="h-2 w-2 rounded-full bg-red-500" />
-      Mon parcours
-    </div>
-
-    <h2 className="mt-4 text-2xl md:text-3xl font-extrabold tracking-tight">
-      Du KZ à la Formule 4
+      Huit en piste.<br />
+      Un seul vainqueur.
     </h2>
 
-    <p className="mt-3 max-w-3xl text-sm md:text-base text-white/70 leading-relaxed">
-      Enzo évolue aujourd’hui en KZ, la catégorie la plus rapide et la plus exigeante du karting.
-      Ses premières expériences en Formule 4 montrent aussi une progression vers le sport automobile
-      moderne et les monoplaces.
+    <p className="mt-5 max-w-3xl text-sm md:text-base leading-relaxed text-white/70">
+      Du 31 octobre au 2 novembre 2026, la filière Porsche GT Cup organise ses sélections :
+      sur près de 500 candidatures, 8 pilotes seulement prendront la piste — sous les yeux
+      des écuries du championnat, qui peuvent soutenir un pilote jusqu'à la prise en charge
+      de sa saison. Quel que soit le résultat, Enzo court en 2027 : championnat GT s'il est
+      vainqueur ou repéré, saison Formule 4 sinon. Un même cap : Le Mans.
     </p>
-  </div>
 
-  <div className="grid gap-6 lg:grid-cols-2">
-    {/* KZ */}
-    <div className="rounded-2xl border border-white/10 bg-neutral-900/50 p-6">
-      <div className="flex items-center justify-between">
-        <h3 className="text-xl font-bold tracking-tight">Le KZ</h3>
-        <span className="rounded-full bg-red-600/15 px-3 py-1 text-xs font-semibold text-red-300 border border-red-500/20">
-          Karting haut niveau
-        </span>
-      </div>
-
-      <p className="mt-4 text-sm text-white/75 leading-relaxed">
-        Le KZ est la catégorie la plus spectaculaire du karting. Il s’agit d’un kart à boîte de vitesses,
-        très rapide, très physique, et réservé à des pilotes déjà expérimentés.
-      </p>
-
-      <ul className="mt-4 space-y-2 text-sm text-white/80">
-        <li className="flex gap-2">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
-          <span>125cc 2 temps avec boîte 6 rapports</span>
-        </li>
-        <li className="flex gap-2">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
-          <span>Catégorie la plus rapide et la plus technique du karting</span>
-        </li>
-        <li className="flex gap-2">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
-          <span>Exige précision, engagement physique et régularité</span>
-        </li>
-        <li className="flex gap-2">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
-          <span>Très formateur pour progresser vers l’automobile</span>
-        </li>
-      </ul>
+    <div className="mt-8 grid md:grid-cols-4 border border-white/10">
+      {[
+        ["5 OCT. 2026", "CANDIDATURE", "Dossier déposé — palmarès, chronos F4, profil."],
+        ["31 OCT. – 2 NOV.", "SÉLECTIONS GT CUP", "8 pilotes en piste, un seul vainqueur."],
+        ["2027", "CHAMPIONNAT GT OU F4", "Dans les deux cas, Enzo court en 2027."],
+        ["Objectif", "24H DU MANS", "Pilote professionnel — viser la victoire en équipe."],
+      ].map((step, i) => (
+        <div
+          key={step[1]}
+          className={`min-h-[150px] p-5 md:p-6 border-white/10 ${
+            i > 0 ? "border-t md:border-t-0 md:border-l" : ""
+          } ${i === 1 ? "bg-red-600" : i === 2 ? "bg-red-900/80" : "bg-[#1a1a1d]"}`}
+        >
+          <div className="text-[10px] font-bold uppercase tracking-[0.2em] text-white/60">
+            {step[0]}
+          </div>
+          <div
+            className="mt-2 text-xl md:text-2xl font-extrabold uppercase leading-none"
+            style={{ fontFamily: '"Bebas Neue", sans-serif' }}
+          >
+            {step[1]}
+          </div>
+          <p className="mt-3 text-xs md:text-sm leading-relaxed text-white/75">{step[2]}</p>
+        </div>
+      ))}
     </div>
 
-    {/* F4 */}
-    <div className="rounded-2xl border border-white/10 bg-neutral-900/50 p-6">
-      <div className="flex items-center justify-between">
-        <h3 className="text-xl font-bold tracking-tight">La Formule 4</h3>
-        <span className="rounded-full bg-red-600/15 px-3 py-1 text-xs font-semibold text-red-300 border border-red-500/20">
-          Première étape vers la monoplace
-        </span>
+    <figure className="mt-8">
+      <div className="overflow-hidden bg-black border border-white/10">
+        <img
+          src="/images/enzo_leprojet.jpeg"
+          alt="Enzo Bélicot en Formule 4"
+          className="w-full max-h-[760px] object-cover object-center"
+          loading="lazy"
+        />
       </div>
-
-      <p className="mt-4 text-sm text-white/75 leading-relaxed">
-        La Formule 4 est une catégorie de monoplace conçue pour accompagner les jeunes pilotes vers
-        le sport automobile. C’est souvent la première grande étape après le karting.
-      </p>
-
-      <ul className="mt-4 space-y-2 text-sm text-white/80">
-        <li className="flex gap-2">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
-          <span>Monoplace de formation vers la compétition auto</span>
-        </li>
-        <li className="flex gap-2">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
-          <span>Travail du freinage, de l’aéro et de la gestion de course</span>
-        </li>
-        <li className="flex gap-2">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
-          <span>Passage naturel pour les pilotes issus du karting de haut niveau</span>
-        </li>
-        <li className="flex gap-2">
-          <span className="mt-2 h-1.5 w-1.5 rounded-full bg-red-500 shrink-0" />
-          <span>Étape clé pour construire un projet sportif plus ambitieux</span>
-        </li>
-      </ul>
-    </div>
+      <figcaption
+        className="mt-3 text-[10px] md:text-xs font-bold uppercase text-white/45"
+        style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.12em" }}
+      >
+        Formule 4 — École CD Sport
+      </figcaption>
+    </figure>
   </div>
+
+  <div
+    className="mt-14 h-3"
+    style={{ background: "repeating-linear-gradient(90deg,#ef0900 0 42px,#f2efea 42px 84px)" }}
+  />
 </section>
 
-<div id="packs" className="mt-10">
- 
 
-  <HorizontalRail title="Packs sponsoring">
-    {data.packs.map((p) => (
-      <div
-        key={p.name}
-        className="snap-start shrink-0 w-[300px] md:w-[380px] rounded-2xl border border-white/10 bg-black/30 p-6 relative overflow-hidden hover:border-white/20 transition"
-      >
-        {/* Glow premium */}
-        {p.name === "Or" && (
-          <div className="absolute -top-10 -right-10 w-32 h-32 bg-yellow-500/20 blur-3xl rounded-full" />
-        )}
-        {p.name === "Argent" && (
-          <div className="absolute -top-10 -right-10 w-32 h-32 bg-zinc-200/20 blur-3xl rounded-full" />
-        )}
-        {p.name === "Bronze" && (
-          <div className="absolute -top-10 -right-10 w-32 h-32 bg-orange-500/20 blur-3xl rounded-full" />
-        )}
 
-        {/* Header */}
-        <div className="flex items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
-            <LaurelTier tier={p.name} />
-            <div className="text-lg font-bold">{p.name}</div>
-          </div>
 
-          <div className="text-base font-bold text-red-500 whitespace-nowrap">
-            {p.price}
-          </div>
-        </div>
 
-        {/* perks */}
-        <ul className="mt-4 space-y-2 text-sm text-white/80">
-          {p.perks.map((x, i) => (
-            <li key={i} className="flex gap-2">
-              <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-red-500" />
-              <span>{x}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-    ))}
-  </HorizontalRail>
-</div>
 
-<HorizontalRail title="Points clés">
-  {data.highlights.map((h, idx) => (
-    <RailCard key={idx}>
-      <div className="text-xs text-white/60">{h.k}</div>
-      <div className="mt-1 text-sm font-semibold">{h.v}</div>
-    </RailCard>
-  ))}
-</HorizontalRail>
-<GalleryRail title="Galerie" items={data.gallery} />
+<GalerieEnPiste />
+
  
 
 {/* PACKS FULL WIDTH */}
@@ -504,29 +575,166 @@ gallery: [
 
 
       {/* Body */}
-      <section className="mx-auto max-w-6xl px-6 pb-16">
+      <section className="mx-auto max-w-[1800px] px-6 pb-16">
         <div className="grid gap-10 lg:grid-cols-12">
           {/* Left: results + benefits */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-12">
        
 
-            <div className="mt-6">
-              <Card title="Ce que gagne votre entreprise">
-                <ul className="space-y-2 text-sm text-white/80">
-                  {data.sponsorBenefits.map((b, i) => (
-                    <li key={i} className="flex gap-2">
-                      <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-white/60" />
-                      <span>{b}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
-            </div>
+            <section className="mt-6 w-full">
+              <div className="rounded-[28px] border border-white/10 bg-[#151517] p-6 md:p-8">
+                <div className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+                  <div>
+                    <div className="flex items-center gap-4">
+                      <div
+                        className="text-[11px] md:text-xs font-extrabold uppercase text-red-600"
+                        style={{ letterSpacing: "0.28em" }}
+                      >
+                        Partenaires
+                      </div>
+                      <div className="h-px w-16 bg-red-600" />
+                    </div>
+
+                    <h2
+                      className="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase leading-[0.92]"
+                      style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.01em" }}
+                    >
+                      Montez à bord.
+                    </h2>
+
+                    <p className="mt-6 max-w-2xl text-sm md:text-base leading-relaxed text-white/70">
+                      Associer votre entreprise à Enzo, c'est soutenir un jeune talent du Pays Basque
+                      en route vers l'élite — et offrir à votre marque une histoire forte à raconter.
+                      Le projet est porté par l'association <strong className="text-white">Sixty-Four Racing</strong> ;
+                      premier soutien acquis : le centre simulateur <strong className="text-white">PSR</strong>,
+                      présent sur le casque.
+                    </p>
+
+                    <ul className="mt-7 space-y-4 text-sm md:text-base text-white/85">
+                      {[
+                        "Visibilité sur la combinaison, le casque et les supports — en course et sur tous les contenus",
+                        "Journées circuit et hospitalité paddock pour vos clients et vos équipes",
+                        "Contenus dédiés sur les réseaux sociaux — photos et vidéos des week-ends de course",
+                        "Rencontres et interventions d'Enzo au sein de votre entreprise",
+                        "Exclusivité sectorielle possible pour les partenaires majeurs",
+                      ].map((item) => (
+                        <li key={item} className="flex gap-3">
+                          <span className="mt-1.5 h-3 w-3 shrink-0 bg-red-600" />
+                          <span>{item}</span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <p className="mt-7 text-xs md:text-sm leading-relaxed text-white/45">
+                      Cadre contractuel sécurisé via l'association Sixty-Four Racing — contreparties
+                      écrites, versements échelonnés possibles.
+                    </p>
+                  </div>
+
+                  <div className="border border-white/10 bg-[#101011] p-6 md:p-8 self-start">
+                    <h3
+                      className="text-2xl md:text-3xl font-extrabold uppercase leading-tight"
+                      style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.02em" }}
+                    >
+                      Devenez le partenaire des sélections.
+                    </h3>
+
+                    <p className="mt-4 text-sm md:text-base leading-relaxed text-white/70">
+                      Décision avant fin septembre 2026 : votre logo sur l'équipement d'Enzo dès le
+                      dossier de candidature du 5 octobre — avec priorité sur le partenariat de la
+                      saison 2027. Chaque partenariat est construit sur mesure : les montants et
+                      contreparties détaillés figurent dans le dossier, remis sur demande.
+                    </p>
+
+                    <a
+                      href={`mailto:${data.contact.email}?subject=Dossier%20de%20partenariat%20Enzo%20B%C3%A9licot`}
+                      className="mt-6 inline-flex items-center justify-center bg-red-600 px-6 py-4 text-sm font-extrabold uppercase tracking-[0.12em] text-white hover:bg-red-500"
+                    >
+                      Demander le dossier
+                    </a>
+
+                    <div className="mt-6 text-sm text-white/60">
+                      Bernard Bélicot · 07 71 72 27 77 · b.belicot@gmail.com
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
           </div>
 
           {/* Right: packs */}
           
         </div>
+
+      <section className="mt-14 md:mt-20 w-full bg-[#0b0b0c]">
+        <div className="px-2 md:px-0">
+          <div className="flex items-center gap-4">
+            <div
+              className="text-[11px] md:text-xs font-extrabold uppercase text-red-600"
+              style={{ letterSpacing: "0.28em" }}
+            >
+              Actualités
+            </div>
+            <div className="h-px w-16 bg-red-600" />
+          </div>
+
+          <h2
+            className="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase leading-[0.9]"
+            style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.01em" }}
+          >
+            Dernières sorties.
+          </h2>
+
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {[
+              {
+                date: "31 OCT. – 2 NOV. 2026",
+                title: "SÉLECTIONS PORSCHE GT CUP",
+                desc: "~500 candidats, 8 pilotes en piste, un seul vainqueur. Le rendez-vous de la saison.",
+              },
+              {
+                date: "2026",
+                title: "CHRONO : 1:21.4 À LÉDENON",
+                desc: "Temps de référence signé en Formule 4 avec l’école CD Sport.",
+              },
+              {
+                date: "24/11/2024",
+                title: "FINALE TROPHÉE ATLANTIQUE — MAGESCQ",
+                desc: "Podium final : 3e du Trophée. « Jeune talent en pleine ascension. »",
+              },
+            ].map((item) => (
+              <article
+                key={item.title}
+                className="min-h-[190px] border-t-[3px] border-red-600 bg-[#171719] p-6 md:p-7"
+              >
+                <div
+                  className="text-[10px] md:text-xs font-bold uppercase text-white/45"
+                  style={{ letterSpacing: "0.12em" }}
+                >
+                  {item.date}
+                </div>
+                <h3
+                  className="mt-4 text-xl md:text-2xl font-extrabold uppercase leading-tight"
+                  style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.02em" }}
+                >
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-sm md:text-base leading-relaxed text-white/65">
+                  {item.desc}
+                </p>
+              </article>
+            ))}
+          </div>
+        </div>
+
+        <div
+          className="mt-14 h-3"
+          style={{
+            background:
+              "repeating-linear-gradient(90deg,#ef0900 0 42px,#f2efea 42px 84px)",
+          }}
+        />
+      </section>
 
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center gap-2 border-t border-white/10 pt-8 text-center">
@@ -539,6 +747,120 @@ gallery: [
         </div>
       </section>
     </div>
+  );
+}
+
+function ProjectStat({ value, label }) {
+  return (
+    <div className="rounded-2xl border border-white/10 bg-black/30 p-5">
+      <div className="text-2xl md:text-3xl font-extrabold text-red-500">{value}</div>
+      <div className="mt-1 text-sm text-white/65">{label}</div>
+    </div>
+  );
+}
+
+function PalmaresTimeline() {
+  const steps = [
+    {
+      year: "2022",
+      title: "Débuts karting — Briscous (64)",
+      text: "Découverte à 12 ans. Podiums dès la première saison UFOLEP.",
+    },
+    {
+      year: "2023",
+      title: "FFSA Nouvelle-Aquitaine + détection nationale",
+      text: "Face à des pilotes bien plus expérimentés. En septembre, sélectionné par la FFSA Academy au Mans parmi l’élite nationale.",
+    },
+    {
+      year: "2024",
+      title: "Championnat de France Junior FFSA Academy",
+      text: "15e après seulement 18 mois de pratique. 3e du Trophée Atlantique. 3e place collective en Coupe de France avec la Nouvelle-Aquitaine — une première depuis 25 ans.",
+    },
+    {
+      year: "2025–26",
+      title: "La monoplace — Formule 4",
+      text: "Page karting refermée : cap sur l’automobile. École itinérante CD Sport, circuits de France et d’Espagne. Chrono de référence : 1:21.4 à Lédenon. Entraînement simulateur au centre PSR.",
+    },
+    {
+      year: "2026",
+      title: "Objectif — Sélections Porsche GT Cup",
+      text: "Dossier déposé le 5 octobre. Sélections du 31 octobre au 2 novembre : ~500 candidats, 8 pilotes en piste, un seul vainqueur — sous les yeux des écuries du championnat.",
+      active: true,
+    },
+  ];
+
+  return (
+    <section className="mt-12 md:mt-16 rounded-[28px] bg-[#f2efea] text-neutral-950 overflow-hidden">
+      <div className="px-5 py-8 md:px-10 md:py-12">
+        <div className="flex items-center gap-4">
+          <div
+            className="text-[11px] md:text-xs font-extrabold uppercase text-red-600"
+            style={{ letterSpacing: "0.28em" }}
+          >
+            Secteur 2 — Le palmarès
+          </div>
+          <div className="h-px w-16 bg-red-600" />
+        </div>
+
+        <h2
+          className="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase leading-[0.95]"
+          style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.015em" }}
+        >
+          Trois ans. Zéro détour.
+        </h2>
+
+        <div className="relative mt-10 md:mt-14">
+          <div className="absolute left-[10px] md:left-[11px] top-2 bottom-3 w-[2px] bg-neutral-900" />
+
+          <div className="space-y-10 md:space-y-12">
+            {steps.map((step) => (
+              <div key={step.year} className="relative pl-12 md:pl-14">
+                <span
+                  className={`absolute left-0 top-1.5 h-5 w-5 ${
+                    step.active ? "bg-red-600" : "bg-neutral-950"
+                  }`}
+                />
+
+                <div
+                  className="text-3xl md:text-4xl font-extrabold text-red-600 leading-none"
+                  style={{ fontFamily: '"Bebas Neue", sans-serif' }}
+                >
+                  {step.year}
+                </div>
+
+                <h3
+                  className="mt-3 text-xl md:text-2xl font-extrabold uppercase leading-tight"
+                  style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.035em" }}
+                >
+                  {step.title}
+                </h3>
+
+                <p className="mt-2 max-w-4xl text-[15px] md:text-lg leading-relaxed text-neutral-700">
+                  {step.text}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-10 md:mt-12 bg-neutral-950 px-5 py-6 md:px-8 md:py-7 text-white">
+          <div
+            className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase leading-tight"
+            style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.025em" }}
+          >
+            Dernier → 15e <span className="text-white/70">•</span>{" "}
+            <span className="text-red-500">+21 places</span>{" "}
+            <span className="text-white/70">•</span> Record du tour
+          </div>
+
+          <p className="mt-3 max-w-5xl text-sm md:text-base leading-relaxed text-white/70">
+            Meeting international Kart-Mag, 72 pilotes. Sorti de piste en finale et relégué dernier,
+            Enzo repart du bac à graviers et signe la remontée du week-end — dépassements comptés à
+            voix haute par le speaker.
+          </p>
+        </div>
+      </div>
+    </section>
   );
 }
 
@@ -794,6 +1116,112 @@ function RailCard({ children }) {
     </div>
   );
 }
+function GalerieEnPiste() {
+  const photos = [
+    {
+      src: enzoCDSport,
+      alt: "Formule 4 en pit lane",
+      label: "Formule 4 — Pit lane",
+    },
+    {
+      src: enzoF4,
+      alt: "Enzo dans le cockpit de la Formule 4",
+      label: "Concentration — Cockpit F4",
+    },
+    {
+      src: enzoKZ,
+      alt: "Enzo en karting à Magescq",
+      label: "Karting — Magescq",
+    },
+    {
+      src: "/images/image_5.jpg",
+      alt: "Entraînement avec CD Sport",
+      label: "Entraînement CD Sport",
+    },
+  ];
+
+  const videos = [
+    {
+      label: "Vidéo — Finale Trophée Atlantique (TikTok)",
+      href: "https://www.tiktok.com/@eyeofvalentin/video/7440973658052463904?_r=1&_t=ZN-93x0LsyzjGg",
+    },
+    {
+      label: "Vidéo — Moments forts (Facebook)",
+      href: "https://www.facebook.com/reel/855080000442826",
+    },
+  ];
+
+  return (
+    <section className="mt-14 md:mt-20 bg-[#0b0b0c] text-white">
+      <div className="px-2 md:px-0">
+        <div className="flex items-center gap-4">
+          <div
+            className="text-[11px] md:text-xs font-extrabold uppercase text-red-600"
+            style={{ letterSpacing: "0.28em" }}
+          >
+            Galerie
+          </div>
+          <div className="h-px w-16 bg-red-600" />
+        </div>
+
+        <h2
+          className="mt-4 text-4xl sm:text-5xl md:text-6xl font-extrabold uppercase leading-[0.9]"
+          style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.01em" }}
+        >
+          En piste.
+        </h2>
+
+        <div className="mt-8 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
+          {photos.map((photo) => (
+            <div
+              key={photo.label}
+              className="group relative aspect-[1.15/1] overflow-hidden border border-white/10 bg-neutral-950"
+            >
+              <img
+                src={photo.src}
+                alt={photo.alt}
+                className="h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"
+                loading="lazy"
+              />
+              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/90 via-black/45 to-transparent px-4 pb-4 pt-14">
+                <div
+                  className="text-sm md:text-base font-extrabold uppercase text-white"
+                  style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.07em" }}
+                >
+                  {photo.label}
+                </div>
+              </div>
+            </div>
+          ))}
+
+          {videos.map((video) => (
+            <a
+              key={video.label}
+              href={video.href}
+              target="_blank"
+              rel="noreferrer"
+              className="group relative flex aspect-[1.15/1] items-center justify-center overflow-hidden border border-white/15 bg-[#0d0d0e] hover:border-red-600/60 transition"
+            >
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(239,9,0,0.08),transparent_45%)]" />
+              <div className="relative flex flex-col items-center px-6 text-center">
+                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 text-2xl text-white shadow-lg shadow-red-600/20 transition group-hover:scale-110">
+                  ▶
+                </div>
+                <div
+                  className="mt-5 text-sm md:text-base font-extrabold uppercase text-white/85"
+                  style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.07em" }}
+                >
+                  {video.label}
+                </div>
+              </div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function GalleryRail({ title = "Galerie", items = [] }) {
   const ref = useRef(null);
   const [openIndex, setOpenIndex] = useState(null);
