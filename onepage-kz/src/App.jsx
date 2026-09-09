@@ -32,7 +32,8 @@ import enzoPerigord from "./assets/enzo_perigord.jpg";
 export default function OnePageSponsorKZ() {
   const data = {
     pilotName: "Enzo Bélicot",
-    assoName: "E.B Sixty-Four",
+    assoName: "E.B Sixty-Four Racing",
+    email: "contact@enzobelicot.fr",
     age: 16,
     region: "Pays Basque • Nouvelle-Aquitaine",
     category: "Formule 4 • Objectif Porsche GT Cup",
@@ -44,7 +45,7 @@ news: [
   {
     date: "Août 2026",
     title: "Préparation sur simulateur",
-    desc: "Sessions d’entraînement au centre PSR pour travailler régularité, repères et préparation mentale avant les prochaines échéances.",
+    desc: "Sessions d’entraînement au centre PSR (Bayonne 64) pour travailler régularité, repères et préparation mentale avant les prochaines échéances.",
     video: enzoSimulator,
     poster: enzoSimulatorThumb,
     tag: "Sim Racing",
@@ -210,7 +211,7 @@ news: [
     },
 
     contact: {
-      contactName: "Association • Sixty-Four Racing",
+      contactName: "Association E.B Sixty-Four Racing",
       phone: "+33771722777",
       email: "contact@enzobelicot.fr",
       instagram: "https://www.instagram.com/belicot_enzo_driver/",
@@ -228,7 +229,7 @@ news: [
             <div className="h-9 w-9 rounded-xl bg-red-600" />
             <div className="leading-tight">
     <div className="text-[11px] sm:text-sm text-white/70">
-  Saison 2026
+  Saison 2026-2027
 </div>
 
 <div className="text-sm sm:text-base font-semibold tracking-tight">
@@ -443,7 +444,7 @@ news: [
                     },
                     {
                       title: "Le pilote-ingénieur",
-                      text: "En première, il prépare un Bac cyber sécurité avec option aéronautique et vise une école d'ingénieur automobile. Anglais courant. Un profil qui comprend la voiture autant qu'il la pilote. Brevet d'Initiation Aéronautique 2026 : la trajectoire, sur terre comme dans les airs.",
+                      text: "En première, il prépare un Bac cyber sécurité avec option aéronautique et vise une école d'ingénieur automobile. Anglais courant. Un profil qui comprend la voiture autant qu'il la pilote.",
                     },
                   ].map((item) => (
                     <div
@@ -623,8 +624,8 @@ news: [
                     <p className="mt-6 max-w-2xl text-sm md:text-base leading-relaxed text-white/70">
                       Associer votre entreprise à Enzo, c'est soutenir un jeune talent du Pays Basque
                       en route vers l'élite — et offrir à votre marque une histoire forte à raconter.
-                      Le projet est porté par l'association <strong className="text-white">Sixty-Four Racing</strong> ;
-                      premier soutien acquis : le centre simulateur <strong className="text-white">PSR</strong>,
+                      Le projet est porté par l'association <strong className="text-white">E.B Sixty-Four Racing</strong> ;
+                      premier soutien acquis : le centre simulateur <strong className="text-white">PSR (Bayonne 64)</strong>,
                       présent sur le casque.
                     </p>
 
@@ -644,7 +645,7 @@ news: [
                     </ul>
 
                     <p className="mt-7 text-xs md:text-sm leading-relaxed text-white/45">
-                      Cadre contractuel sécurisé via l'association Sixty-Four Racing — contreparties
+                      Cadre contractuel sécurisé via l'association E.B Sixty-Four Racing— contreparties
                       écrites, versements échelonnés possibles.
                     </p>
                   </div>
@@ -672,7 +673,7 @@ news: [
                     </a>
 
                     <div className="mt-6 text-sm text-white/60">
-                      Bernard Bélicot · 07 71 72 27 77 · b.belicot@gmail.com
+                      Association {data.assoName} · 07 71 72 27 77 · {data.email} 
                     </div>
                   </div>
                 </div>
@@ -757,7 +758,7 @@ news: [
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center gap-2 border-t border-white/10 pt-8 text-center">
           <div className="text-sm font-semibold">
-            {data.assoName} • {data.category} • Saison 2026-2027
+            {data.pilotName} • {data.category} • Saison 2026-2027
           </div>
           <div className="text-xs text-white/60">
             Contact : {data.contact.contactName} — {data.contact.phone} — {data.contact.email}
@@ -797,7 +798,7 @@ function PalmaresTimeline() {
     {
       year: "2025–26",
       title: "La monoplace — Formule 4",
-      text: "Page karting refermée : cap sur l’automobile. École itinérante CD Sport, circuits de France et d’Espagne. Chrono de référence : 1:21.4 à Lédenon. Entraînement simulateur au centre PSR.",
+      text: "Page karting refermée : cap sur l’automobile. École itinérante CD Sport, circuits de France et d’Espagne. Chrono de référence : 1:21.4 à Lédenon. Entraînement simulateur au centre PSR (Bayonne 64).",
     },
     {
       year: "2026",
