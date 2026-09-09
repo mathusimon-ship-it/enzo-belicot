@@ -2,6 +2,7 @@ import React, { useRef, useState, useEffect } from "react";
 import enzoSimulator from "./assets/media/enzoSimulator.mp4";
 import enzoSimulatorThumb from "./assets/media/enzoSimulatorThumb.jpg";
 import enzoImg from "./assets/enzo.jpg";
+import enzoVideo from "./assets/media/enzo-hq.mp4";
 import enzoTiktok from "./assets/media/enzoTiktok.png";
 import enzoFacebook from "./assets/media/enzoFacebook.png";
 import enzoF4 from "./assets/Actu/enzoF4.jpg";
@@ -9,6 +10,11 @@ import enzoCalendar from "./assets/Actu/enzoCalendar.png";
 import enzoKZ from "./assets/Actu/enzoKZ.png";
 import enzoBackground from "./assets/enzoBackground.png";
 import enzoCDSport from "./assets/Actu/enzoCDSport.jpg";
+import enzoTiktokBg from "./assets/media/enzoTiktokBg.jpg";
+import enzoFacebookBg from "./assets/media/enzoFacebookBg.jpg";
+import enzoProSimRacer from "./assets/media/enzoProSimRacer.mp4";
+import enzoProSimRacerBg from "./assets/media/enzoProSimRacer.jpg";
+import enzoPerigord from "./assets/enzo_perigord.jpg";
 
 
 
@@ -26,6 +32,7 @@ import enzoCDSport from "./assets/Actu/enzoCDSport.jpg";
 export default function OnePageSponsorKZ() {
   const data = {
     pilotName: "Enzo Bélicot",
+    assoName: "E.B Sixty-Four",
     age: 16,
     region: "Pays Basque • Nouvelle-Aquitaine",
     category: "Formule 4 • Objectif Porsche GT Cup",
@@ -73,17 +80,17 @@ news: [
     tag: "Palmarès",
   },
 ],
-gallery: [
-  // TikTok (preuve sociale)
-  {
-    type: "video",
-    poster: enzoTiktok,
-    caption: "Finale Trophée Atlantique – Magescq",
-    date: "24/11/2024",
-    sub: "Mention par eyeofvalentin : « jeune talent en pleine ascension »",
-    tag: "TikTok",
-    link: "https://www.tiktok.com/@eyeofvalentin/video/7440973658052463904?_r=1&_t=ZN-93x0LsyzjGg",
-  },
+  gallery: [
+    // TikTok (preuve sociale)
+    {
+      type: "video",
+      poster: enzoTiktok,
+      caption: "Finale Trophée Atlantique – Magescq",
+      date: "24/11/2024",
+      sub: "Mention par eyeofvalentin : « jeune talent en pleine ascension »",
+      tag: "TikTok",
+      link: "https://www.tiktok.com/@eyeofvalentin/video/7440973658052463904?_r=1&_t=ZN-93x0LsyzjGg",
+    },
 
     { type: "image", src: "/images/image_5.jpg" },
     { type: "image", src: "/images/image_7.jpg" },
@@ -203,9 +210,9 @@ gallery: [
     },
 
     contact: {
-      contactName: "Bernard Bélicot • Sixty-Four Racing",
+      contactName: "Association • Sixty-Four Racing",
       phone: "+33771722777",
-      email: "b.belicot@gmail.com",
+      email: "contact@enzobelicot.fr",
       instagram: "https://www.instagram.com/belicot_enzo_driver/",
     },
 
@@ -220,11 +227,16 @@ gallery: [
           <div className="flex items-center gap-3">
             <div className="h-9 w-9 rounded-xl bg-red-600" />
             <div className="leading-tight">
-              <div className="text-sm text-white/70">Saison 2026</div>
-              <div className="font-semibold tracking-tight">{data.category}</div>
+    <div className="text-[11px] sm:text-sm text-white/70">
+  Saison 2026
+</div>
+
+<div className="text-sm sm:text-base font-semibold tracking-tight">
+  {data.category}
+</div>
             </div>
           </div>
-          <div className="text-sm text-white/70">
+          <div className="text-xs sm:text-sm text-white/70">
             {data.pilotName} • {data.age} ans • {data.region}
           </div>
         </div>
@@ -246,42 +258,90 @@ gallery: [
 
 <div className="relative mx-auto max-w-[1800px] px-6 py-14">
           <div className="grid gap-10 lg:grid-cols-12">
-            <div className="lg:col-span-7">
-            
+            <div className="lg:col-span-12">
+              <div className="mt-5 grid grid-cols-[1fr_150px] items-start gap-4 lg:grid-cols-[300px_minmax(0,1fr)_220px] lg:gap-8">
 
-        <div className="mt-5 inline-block">
-  <h1
-    className="uppercase text-[#f2efea]"
-    style={{
-      fontFamily: '"Anton", sans-serif',
-      fontWeight: 400,
-      fontSize: "clamp(56px, 9vw, 104px)",
-      lineHeight: 0.95,
-      letterSpacing: "0.01em",
-    }}
-  >
-    <span className="block">ENZO</span>
-    <span className="block">BÉLICOT</span>
-  </h1>
+  {/* TITRE */}
+  <div className="inline-block">
+    <h1
+      className="uppercase text-[#f2efea]"
+      style={{
+        fontFamily: '"Anton", sans-serif',
+        fontWeight: 400,
+        fontSize: "clamp(56px, 7vw, 104px)",
+        lineHeight: 0.95,
+        letterSpacing: "0.01em",
+      }}
+    >
+      <span className="block">ENZO</span>
+      <span className="block">BÉLICOT</span>
+    </h1>
 
-  <div
-    className="mt-2 h-3 w-full"
-    style={{
-      background:
-        "repeating-linear-gradient(90deg,#ef0900 0 42px,#f2efea 42px 84px)",
-    }}
-  />
+    <div
+      className="mt-2 h-3 w-full"
+      style={{
+        background:
+          "repeating-linear-gradient(90deg,#ef0900 0 42px,#f2efea 42px 84px)",
+      }}
+    />
+  </div>
+
+  {/* FICHE PILOTE — MOBILE À DROITE / DESKTOP 3E COLONNE */}
+<div className="-mt-15 flex justify-end lg:mt-0 lg:col-start-3 lg:row-start-1">  
+    <div className="self-start w-full max-w-[150px] lg:max-w-[200px] shrink-0 rounded-xl border border-white/10 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90 p-2 lg:p-3 shadow-xl backdrop-blur relative overflow-hidden">
+
+      <div className="absolute -top-10 -left-10 w-28 h-28 bg-red-600/20 blur-2xl rounded-full" />
+
+      <div className="flex justify-center relative">
+<div className="w-32 h-40 rounded-lg border border-white/20 bg-black overflow-hidden"><img
+  src={enzoImg}
+  alt="Enzo Bélicot"
+  className="w-full h-full object-contain"
+/>
+        </div>
+
+        <div className="absolute -bottom-2 bg-red-600 text-white text-[9px] lg:text-[10px] px-2 py-0.5 rounded-full shadow">
+          F4 Driver
+        </div>
+      </div>
+
+      <div className="text-[9px] lg:text-[10px] font-semibold text-white/60 mt-2 text-center tracking-widest uppercase">
+        FICHE PILOTE
+      </div>
+
+      <div className="mt-1 space-y-1 text-[10px] lg:text-xs">
+        <CompactRow label="Nom" value="Enzo Bélicot" />
+        <CompactRow label="Âge" value="16 ans" />
+        <CompactRow label="Région" value="Pays Basque" />
+        <CompactRow label="Catégorie" value="Formule 4" />
+      </div>
+
+    </div>
+  </div>
+
+  {/* VIDEO — SOUS TITRE+FICHE SUR MOBILE / AU CENTRE SUR DESKTOP */}
+  <div className="col-span-2 mt-3 aspect-video overflow-hidden rounded-xl border border-white/10 bg-black shadow-2xl lg:col-span-1 lg:col-start-2 lg:row-start-1 lg:mt-0">
+    <video
+      src={enzoVideo}
+      autoPlay
+      loop
+      controls
+      muted
+      playsInline
+      preload="metadata"
+      className="h-full w-full object-cover"
+    />
+  </div>
+
 </div>
 
-              <p className="mt-4 text-lg text-white/80">{data.headline}</p>
+              <p className="mt-6 text-lg text-white/80">{data.headline}</p>
               <p
-  className="mt-6 text-5xl font-extrabold text-red-500"
-  style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.08em" }}
->
-   OBJECTIF PORSCHE GT CUP.
-</p>
-
-              
+                className="mt-6 text-5xl font-extrabold text-red-500"
+                style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.08em" }}
+              >
+                OBJECTIF PORSCHE GT CUP.
+              </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
@@ -298,48 +358,6 @@ gallery: [
                 </a>
               </div>
             </div>
-            
-
-            {/* Quick facts card */}
-<div className="lg:col-span-5 flex lg:justify-end">
-  <div className="self-start w-full max-w-[200px] shrink-0 mx-auto lg:mx-0 rounded-xl border border-white/10 bg-gradient-to-b from-neutral-900/80 to-neutral-950/90 p-3 shadow-xl backdrop-blur relative overflow-hidden">
-
-    <div className="absolute -top-10 -left-10 w-28 h-28 bg-red-600/20 blur-2xl rounded-full" />
-
-    {/* IMAGE */}
-    <div className="flex justify-center relative">
-      <div className="w-32 h-40 rounded-lg border border-white/20 bg-black/20 overflow-hidden">
-        <img
-          src={enzoImg}
-          alt="Enzo Bélicot"
-          className="w-full h-full object-cover"
-        />
-      </div>
-
-      <div className="absolute -bottom-2 bg-red-600 text-white text-[10px] px-2 py-0.5 rounded-full shadow">
-        F4 Driver
-      </div>
-    </div>
-
-    {/* TITLE */}
-    <div className="text-[10px] font-semibold text-white/60 mt-2 text-center tracking-widest uppercase">
-      FICHE PILOTE
-    </div>
-
-    {/* INFOS */}
-    <div className="mt-1 space-y-1.5 text-xs">
-      <CompactRow label="Nom" value="Enzo Bélicot" />
-      <CompactRow label="Âge" value="16 ans" />
-      <CompactRow label="Région" value="Pays Basque" />
-      <CompactRow label="Catégorie" value="Formule 4" />
-    </div>
-
-  </div>
-</div>
-
-
-
-
 
             {/* BANDEAU CHIFFRES CLÉS */}
             <div className="lg:col-span-12 mt-2 grid overflow-hidden border border-white/10 bg-[#151517] sm:grid-cols-2 lg:grid-cols-4">
@@ -425,7 +443,7 @@ gallery: [
                     },
                     {
                       title: "Le pilote-ingénieur",
-                      text: "En première, il prépare un Bac cyber sécurité avec option aéronautique et vise une école d'ingénieur automobile. Anglais courant. Un profil qui comprend la voiture autant qu'il la pilote.",
+                      text: "En première, il prépare un Bac cyber sécurité avec option aéronautique et vise une école d'ingénieur automobile. Anglais courant. Un profil qui comprend la voiture autant qu'il la pilote. Brevet d'Initiation Aéronautique 2026 : la trajectoire, sur terre comme dans les airs.",
                     },
                   ].map((item) => (
                     <div
@@ -739,7 +757,7 @@ gallery: [
         {/* Bottom bar */}
         <div className="mt-14 flex flex-col items-center gap-2 border-t border-white/10 pt-8 text-center">
           <div className="text-sm font-semibold">
-            {data.pilotName} • {data.category} • Saison 2026
+            {data.assoName} • {data.category} • Saison 2026-2027
           </div>
           <div className="text-xs text-white/60">
             Contact : {data.contact.contactName} — {data.contact.phone} — {data.contact.email}
@@ -1117,6 +1135,8 @@ function RailCard({ children }) {
   );
 }
 function GalerieEnPiste() {
+    const [playingVideo, setPlayingVideo] = useState(null);
+
   const photos = [
     {
       src: enzoCDSport,
@@ -1132,24 +1152,34 @@ function GalerieEnPiste() {
       src: enzoKZ,
       alt: "Enzo en karting à Magescq",
       label: "Karting — Magescq",
-    },
-    {
-      src: "/images/image_5.jpg",
-      alt: "Entraînement avec CD Sport",
-      label: "Entraînement CD Sport",
-    },
+    },  {
+    src: enzoPerigord,
+    alt: "Enzo Bélicot en course sous la pluie au Circuit du Périgord à Teyjat",
+    label: "Race Week — Circuit du Périgord : Teyjat 🥈",
+  },
+
   ];
 
-  const videos = [
-    {
-      label: "Vidéo — Finale Trophée Atlantique (TikTok)",
-      href: "https://www.tiktok.com/@eyeofvalentin/video/7440973658052463904?_r=1&_t=ZN-93x0LsyzjGg",
-    },
-    {
-      label: "Vidéo — Moments forts (Facebook)",
-      href: "https://www.facebook.com/reel/855080000442826",
-    },
-  ];
+const videos = [
+  {
+    type: "external",
+    label: "Vidéo — Finale Trophée Atlantique (TikTok)",
+    href: "https://www.tiktok.com/@eyeofvalentin/video/7440973658052463904?_r=1&_t=ZN-93x0LsyzjGg",
+    image: enzoTiktokBg,
+  },
+  {
+    type: "external",
+    label: "Vidéo — Moments forts (Facebook)",
+    href: "https://www.facebook.com/reel/855080000442826",
+    image: enzoFacebookBg,
+  },
+  {
+    type: "local",
+    label: "Entraînement simulateur — ProSimRacer Bayonne",
+    src: enzoProSimRacer,
+    image: enzoProSimRacerBg,
+  },
+];
 
   return (
     <section className="mt-14 md:mt-20 bg-[#0b0b0c] text-white">
@@ -1171,8 +1201,8 @@ function GalerieEnPiste() {
           En piste.
         </h2>
 
-        <div className="mt-8 grid gap-3 md:grid-cols-2 lg:grid-cols-3">
-          {photos.map((photo) => (
+<div className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-4">
+  {photos.map((photo) => (          
             <div
               key={photo.label}
               className="group relative aspect-[1.15/1] overflow-hidden border border-white/10 bg-neutral-950"
@@ -1192,32 +1222,92 @@ function GalerieEnPiste() {
                 </div>
               </div>
             </div>
+            
           ))}
 
-          {videos.map((video) => (
-            <a
-              key={video.label}
-              href={video.href}
-              target="_blank"
-              rel="noreferrer"
-              className="group relative flex aspect-[1.15/1] items-center justify-center overflow-hidden border border-white/15 bg-[#0d0d0e] hover:border-red-600/60 transition"
-            >
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(239,9,0,0.08),transparent_45%)]" />
-              <div className="relative flex flex-col items-center px-6 text-center">
-                <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 text-2xl text-white shadow-lg shadow-red-600/20 transition group-hover:scale-110">
-                  ▶
-                </div>
-                <div
-                  className="mt-5 text-sm md:text-base font-extrabold uppercase text-white/85"
-                  style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.07em" }}
-                >
-                  {video.label}
-                </div>
-              </div>
-            </a>
-          ))}
+  {videos.map((video) =>
+  video.type === "local" ? (
+    playingVideo === video.label ? (
+      <div
+        key={video.label}
+        className="relative aspect-[1.15/1] overflow-hidden border border-white/15 bg-black"
+      >
+        <video
+          src={video.src}
+          autoPlay
+          controls
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      </div>
+    ) : (
+      <button
+        key={video.label}
+        type="button"
+        onClick={() => setPlayingVideo(video.label)}
+        className="group relative aspect-[1.15/1] overflow-hidden border border-white/15 bg-[#0d0d0e]"
+      >
+        <img
+          src={video.image}
+          alt={video.label}
+          className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"
+        />
+
+        <div className="absolute inset-0 bg-black/35" />
+
+        <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
+          <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 text-white shadow-lg shadow-red-600/30 transition group-hover:scale-110">
+            <span className="ml-1 text-2xl">▶</span>
+          </div>
+
+          <div
+            className="mt-5 text-sm md:text-base font-extrabold uppercase text-white"
+            style={{
+              fontFamily: '"Bebas Neue", sans-serif',
+              letterSpacing: "0.07em",
+            }}
+          >
+            {video.label}
+          </div>
+        </div>
+      </button>
+    )
+  ) : (
+    <a
+      key={video.label}
+      href={video.href}
+      target="_blank"
+      rel="noreferrer"
+      className="group relative aspect-[1.15/1] overflow-hidden border border-white/15 bg-[#0d0d0e]"
+    >
+      <img
+        src={video.image}
+        alt=""
+        className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-[1.025]"
+      />
+
+      <div className="absolute inset-0 bg-black/35" />
+
+      <div className="relative flex h-full flex-col items-center justify-center px-6 text-center">
+        <div className="flex h-16 w-16 items-center justify-center rounded-full bg-red-600 text-2xl text-white shadow-lg shadow-red-600/30 transition group-hover:scale-110">
+          ▶
+        </div>
+
+        <div
+          className="mt-5 text-sm md:text-base font-extrabold uppercase text-white"
+          style={{
+            fontFamily: '"Bebas Neue", sans-serif',
+            letterSpacing: "0.07em",
+          }}
+        >
+          {video.label}
         </div>
       </div>
+    </a>
+  )
+)}        </div>
+
+        </div>
     </section>
   );
 }
