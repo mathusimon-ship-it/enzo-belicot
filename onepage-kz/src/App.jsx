@@ -36,9 +36,9 @@ export default function OnePageSponsorKZ() {
     email: "contact@enzobelicot.fr",
     age: 16,
     region: "Pays Basque • Nouvelle-Aquitaine",
-    category: "Formule 4 • Objectif Porsche GT Cup",
+    category: "Formule 4 • Objectif Porsche Carrera Cup France",
     seasonTitle: "Enzo Bélicot",
-    headline: "Près de 500 candidats, 8 pilotes en piste, un seul vainqueur. Formé à la FFSA Academy puis en Formule 4 (1:21.4 à Lédenon), Enzo vise l’une des huit places — et trace sa route vers les 24 Heures du Mans.",
+    headline: "Près de 500 candidats, 8 pilotes en piste, un seul vainqueur. Formé à la FFSA Academy puis en Formule 4, Enzo vise l’une des huit places — et trace sa route vers les 24 Heures du Mans.",
     // Mets ici un lien vers une belle photo (ou laisse vide et ça met un placeholder)
     heroImageUrl: enzoBackground,
 news: [
@@ -117,7 +117,7 @@ news: [
 
     highlights: [
       { k: "Championnat de France Junior 2024", v: "15e après seulement 18 mois de pratique" },
-      { k: "Kart-Mag • 72 pilotes", v: "+21 places en finale après être reparti dernier" },
+      { k: "Kart-Mag • 72 pilotes", v: "21 PLACES REMONTEES + RECORD DU TOUR pour ARRIVER 15ème !!" },
       { k: "Performance", v: "Record du tour lors du meeting Kart-Mag" },
       { k: "Formule 4 • Lédenon", v: "1:21.4 avec l’école CD Sport" },
     ],
@@ -126,8 +126,8 @@ news: [
       "2022 — Débuts à Briscous : podiums dès la première saison UFOLEP (2e et 3e)",
       "2023 — FFSA Nouvelle-Aquitaine et sélection nationale FFSA Academy au Mans",
       "2024 — 15e du Championnat de France Junior FFSA Academy",
-      "2024 — 3e du Trophée Atlantique",
-      "2024 — 3e place collective en Coupe de France avec la Nouvelle-Aquitaine",
+      "2024 — 3ème au Trophée Atlantique Nouvelle Aquitaine Sud",
+      "2024 — 3ème place collective pour la région Nouvelle Aquitaine Sud....Une Première  depuis 25 ans",
       "Kart-Mag — +21 places en finale et record du tour parmi 72 pilotes",
       "2025–2026 — Formation Formule 4 CD Sport, roulages en France et en Espagne",
       "2026 — Chrono de référence : 1:21.4 à Lédenon",
@@ -156,7 +156,7 @@ news: [
       },
       {
         year: "2026",
-        title: "Objectif — Sélections Porsche GT Cup",
+        title: "Objectif — Sélections Porsche Carrera Cup Junior France",
         text: "Dossier prévu le 5 octobre. Sélections du 31 octobre au 2 novembre 2026.",
       },
     ],
@@ -207,7 +207,7 @@ news: [
 
     budget: {
       total: "10 000 – 15 000 €",
-      note: "Enveloppe recherchée pour préparer et équiper Enzo pour les sélections Porsche GT Cup 2026.",
+      note: "Enveloppe recherchée pour préparer et équiper Enzo pour les sélections Porsche Carrera Cup France.",
     },
 
     contact: {
@@ -341,7 +341,7 @@ news: [
                 className="mt-6 text-5xl font-extrabold text-red-500"
                 style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.08em" }}
               >
-                OBJECTIF PORSCHE GT CUP.
+                OBJECTIF PORSCHE Carrera Cup Junior France.
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
@@ -367,7 +367,7 @@ news: [
                   8/500
                 </div>
                 <div className="mt-4 text-base md:text-lg font-bold uppercase leading-snug text-white" style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.055em" }}>
-                  Huit pilotes retenus sur ~500 candidats — sélections Porsche GT Cup 2026
+                  Huit pilotes retenus sur ~500 candidats — sélections Porsche Carrera Cup Junior France 2026
                 </div>
               </div>
 
@@ -391,10 +391,10 @@ news: [
 
               <div className="border-t border-white/10 px-6 py-7 sm:border-l lg:border-t-0 md:px-8 md:py-9">
                 <div className="text-5xl md:text-6xl font-extrabold leading-none text-[#f2efea]" style={{ fontFamily: '"Bebas Neue", sans-serif' }}>
-                  1:21.4
+                  1er
                 </div>
                 <div className="mt-4 text-base md:text-lg font-bold uppercase leading-snug text-white/80" style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.055em" }}>
-                  Chrono en Formule 4 — circuit de Lédenon, école CD Sport
+                      au trophée Nouvelle Aquitaine en Sport 2 temps (2022)
                 </div>
               </div>
             </div>
@@ -520,19 +520,19 @@ news: [
     </h2>
 
     <p className="mt-5 max-w-3xl text-sm md:text-base leading-relaxed text-white/70">
-      Du 31 octobre au 2 novembre 2026, la filière Porsche GT Cup organise ses sélections :
-      sur près de 500 candidatures, 8 pilotes seulement prendront la piste — sous les yeux
-      des écuries du championnat, qui peuvent soutenir un pilote jusqu'à la prise en charge
-      de sa saison. Quel que soit le résultat, Enzo court en 2027 : championnat GT s'il est
-      vainqueur ou repéré, saison Formule 4 sinon. Un même cap : Le Mans.
+      Du 31 octobre au 2 novembre 2026, la filière Porsche Carrera Cup Junior France organise ses sélections :
+      sur près de 500 candidatures, 8 pilotes seulement prendront la piste — Sous les yeux de la TEAM du championnat qui soutiendra Enzo.
+      
+   Quel que soit le résultat, en 2027 : Enzo intègre la compétition en championnat Junior  avec la Team TFT: - soit en Porsche GT Carrera Porsche -  soit  Le sprint Challenge en Porsche. 
+     Le cap reste le  même  : Gagner les 24h du Mans.
     </p>
 
     <div className="mt-8 grid md:grid-cols-4 border border-white/10">
       {[
-        ["5 OCT. 2026", "CANDIDATURE", "Dossier déposé — palmarès, chronos F4, profil."],
-        ["31 OCT. – 2 NOV.", "SÉLECTIONS GT CUP", "8 pilotes en piste, un seul vainqueur."],
-        ["2027", "CHAMPIONNAT GT OU F4", "Dans les deux cas, Enzo court en 2027."],
-        ["Objectif", "24H DU MANS", "Pilote professionnel — viser la victoire en équipe."],
+        ["5 OCT. 2026", "CHAMPIONNAT JUNIOR EN COMPETION"],
+        ["31 OCT. – 2 NOV.", "SÉLECTIONS GT CARRERA CUP", "8 pilotes en piste, un seul vainqueur."],
+        ["2027", "CHAMPIONNAT GT", "Dans les deux cas, Enzo court en 2027."],
+        ["Objectif", "24H DU MANS", "Pilote professionnel — pour Gagner !"],
       ].map((step, i) => (
         <div
           key={step[1]}
@@ -659,10 +659,7 @@ news: [
                     </h3>
 
                     <p className="mt-4 text-sm md:text-base leading-relaxed text-white/70">
-                      Décision avant fin septembre 2026 : votre logo sur l'équipement d'Enzo dès le
-                      dossier de candidature du 5 octobre — avec priorité sur le partenariat de la
-                      saison 2027. Chaque partenariat est construit sur mesure : les montants et
-                      contreparties détaillés figurent dans le dossier, remis sur demande.
+                      A partir de Septembre 2026 : Vous pouvez soutenir Enzo : Votre Logo sera apposé sur l'équipement du pilote. Avec priorité sur le sponsoring, le mécéna et autres participation pour la saison 2027. Chaque partenariat est construit sur mesure : Les montants et contreparties sont détaillés et figurent dans le dossier de partenariat remis SUR DEMANDE.
                     </p>
 
                     <a
@@ -708,13 +705,13 @@ news: [
             {[
               {
                 date: "31 OCT. – 2 NOV. 2026",
-                title: "SÉLECTIONS PORSCHE GT CUP",
+                title: "SÉLECTIONS PORSCHE Carrera Cup Junior France",
                 desc: "~500 candidats, 8 pilotes en piste, un seul vainqueur. Le rendez-vous de la saison.",
               },
-              {
+             {
                 date: "2026",
-                title: "CHRONO : 1:21.4 À LÉDENON",
-                desc: "Temps de référence signé en Formule 4 avec l’école CD Sport.",
+                title: "CHRONO :  À LÉDENON",
+                desc: "Essai Libres en Formule 4 avec l’école CD Sport.",
               },
               {
                 date: "24/11/2024",
@@ -802,7 +799,7 @@ function PalmaresTimeline() {
     },
     {
       year: "2026",
-      title: "Objectif — Sélections Porsche GT Cup",
+      title: "Objectif — Sélections PORSCHE Carrera Cup Junior France",
       text: "Dossier déposé le 5 octobre. Sélections du 31 octobre au 2 novembre : ~500 candidats, 8 pilotes en piste, un seul vainqueur — sous les yeux des écuries du championnat.",
       active: true,
     },
@@ -867,14 +864,14 @@ function PalmaresTimeline() {
             className="text-2xl sm:text-3xl md:text-4xl font-extrabold uppercase leading-tight"
             style={{ fontFamily: '"Bebas Neue", sans-serif', letterSpacing: "0.025em" }}
           >
-            Dernier → 15e <span className="text-white/70">•</span>{" "}
-            <span className="text-red-500">+21 places</span>{" "}
+            +21  <span className="text-white/70">•</span>{" "}
+            <span className="text-red-500">places</span>{" "}
             <span className="text-white/70">•</span> Record du tour
           </div>
 
           <p className="mt-3 max-w-5xl text-sm md:text-base leading-relaxed text-white/70">
-            Meeting international Kart-Mag, 72 pilotes. Sorti de piste en finale et relégué dernier,
-            Enzo repart du bac à graviers et signe la remontée du week-end — dépassements comptés à
+            Meeting international Kart-Mag, 72 pilotes.
+            Enzo repart du bac à graviers  remonte 21 places  et réalise le record du tour pour arriver 15eme !!!— dépassements comptés à
             voix haute par le speaker.
           </p>
         </div>
