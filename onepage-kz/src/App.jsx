@@ -710,7 +710,7 @@ news: [
               },
              {
                 date: "2026",
-                title: "CHRONO :  À LÉDENON",
+                title: "CHRONOS - LÉDENON",
                 desc: "Essai Libres en Formule 4 avec l’école CD Sport.",
               },
               {
