@@ -50,13 +50,14 @@ news: [
     poster: enzoSimulatorThumb,
     tag: "Sim Racing",
   },
-  {
+/*  {
     date: "2026",
     title: "1:21.4 à Lédenon",
     desc: "Chrono de référence en Formule 4 avec l’école CD Sport sur le circuit de Lédenon.",
     img: enzoCDSport,
     tag: "F4 • CD Sport",
   },
+  */
   {
     date: "2026",
     title: "Cap sur les sélections Porsche",
@@ -130,7 +131,7 @@ news: [
       "2024 — 3ème place collective pour la région Nouvelle Aquitaine Sud....Une Première  depuis 25 ans",
       "Kart-Mag — +21 places en finale et record du tour parmi 72 pilotes",
       "2025–2026 — Formation Formule 4 CD Sport, roulages en France et en Espagne",
-      "2026 — Chrono de référence : 1:21.4 à Lédenon",
+    //  "2026 — Chrono de référence : 1:21.4 à Lédenon",
     ],
 
     timeline: [
@@ -152,7 +153,7 @@ news: [
       {
         year: "2025–26",
         title: "Passage à la monoplace — Formule 4",
-        text: "Entraînements avec CD Sport à Lédenon, Nogaro et sur d’autres circuits de France et d’Espagne. Référence : 1:21.4 à Lédenon.",
+        text: "Page karting refermée : cap sur l’automobile. École itinérante avec CD Sport, sur les circuits de France et d’Espagne.",
       },
       {
         year: "2026",
@@ -432,8 +433,7 @@ news: [
                   {[
                     {
                       title: "La discipline du danseur",
-                      text: "Dix ans au conservatoire et à l'école du Malandain Ballet Biarritz : écoute, concentration, mémorisation — et une résistance à la critique précieuse face aux ingénieurs.",
-                    },
+                      text:  "Dix ans au conservatoire et à l’école du Malandain Ballet Biarritz : écoute, concentration, mémorisation — et une souplesse, une flexibilité — capacités précieuses pour être attentif aux remarques des ingénieurs.",                    },
                     {
                       title: "Le sang-froid du sauveteur",
                       text: "Sauveteur côtier formé à Biarritz dès 8 ans — à 10 ans, il sauve un homme de la noyade. Ce calme-là ne s'apprend pas en salle de briefing.",
@@ -529,7 +529,7 @@ news: [
 
     <div className="mt-8 grid md:grid-cols-4 border border-white/10">
       {[
-        ["5 OCT. 2026", "CHAMPIONNAT JUNIOR EN COMPETION"],
+        ["5 OCT. 2026", "CHAMPIONNAT JUNIOR EN COMPETITION"],
         ["31 OCT. – 2 NOV.", "SÉLECTIONS GT CARRERA CUP", "8 pilotes en piste, un seul vainqueur."],
         ["2027", "CHAMPIONNAT GT", "Dans les deux cas, Enzo court en 2027."],
         ["Objectif", "24H DU MANS", "Pilote professionnel — pour Gagner !"],
@@ -711,7 +711,7 @@ news: [
              {
                 date: "2026",
                 title: "CHRONOS - LÉDENON",
-                desc: "Essai Libres en Formule 4 avec l’école CD Sport.",
+                desc: "2026 une année ascensionnelle complète d'entrainements et de performances en F4 sur les circuits de France et d'Espagne.",
               },
               {
                 date: "24/11/2024",
@@ -795,7 +795,7 @@ function PalmaresTimeline() {
     {
       year: "2025–26",
       title: "La monoplace — Formule 4",
-      text: "Page karting refermée : cap sur l’automobile. École itinérante CD Sport, circuits de France et d’Espagne. Chrono de référence : 1:21.4 à Lédenon. Entraînement simulateur au centre PSR (Bayonne 64).",
+      text: "Page karting refermée : cap sur l’automobile. École itinérante CD Sport, circuits de France et d’Espagne. Entraînement simulateur au centre PSR (Bayonne 64).",
     },
     {
       year: "2026",
@@ -870,9 +870,7 @@ function PalmaresTimeline() {
           </div>
 
           <p className="mt-3 max-w-5xl text-sm md:text-base leading-relaxed text-white/70">
-            Meeting international Kart-Mag, 72 pilotes.
-            Enzo repart du bac à graviers  remonte 21 places  et réalise le record du tour pour arriver 15eme !!!— dépassements comptés à
-            voix haute par le speaker.
+            Meeting international Kart-Mag, 72 pilotes. Enzo remonte 21 places, réalise le record du tour et termine 15e ! Dépassements comptés à voix haute par le speaker.
           </p>
         </div>
       </div>
